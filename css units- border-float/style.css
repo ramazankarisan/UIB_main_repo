@@ -1,0 +1,49 @@
+/* ******** Resetting ******* CSS */
+* {
+  margin: 0;
+  padding: ;
+  box-sizing: border-box;
+}
+
+/* CSS FLOAT */
+
+.left {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.right {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+}
+
+.container {
+  float: left; /* display inline creates some spaces between the DIVs by browsers default */
+  border: 1px solid blue;
+  width: calc(33.3% - 20px);
+  height: 200px;
+  margin: 10px;
+}
+
+.container2 {
+  float: left;
+  padding: 10px;
+  width: 25%;
+  height: 200px;
+}
+.container2 div {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 10px green;
+}
