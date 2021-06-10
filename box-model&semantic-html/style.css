@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+.body {
+  margin: 20px;
+}
+.coll1 {
+  width: 100%;
+  height: 200px;
+  background-color: powderblue;
+  padding: 10px;
+  margin-left: 20px;
+}
+.coll1 {
+  margin-bottom: 20px;
+}
+/* the margin between first and second div is 100px, because the bigger margin override the smaller one, for this example 100px>20px  */
+.coll2 {
+  width: 100%;
+  height: 200px;
+  background-color: powderblue;
+  padding: 10px;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.article {
+  float: left;
+  width: calc(33% -60px);
+  padding: 10px;
+  margin: 20px;
+}
+/* 
+BOX Model */
+
+.box-sizing_content_box {
+  border: 10px orange solid;
+  padding: 10px;
+  width: calc(33% - 60px);
+  height: 200px;
+  margin: 20px;
+  float: left;
+}
+
+.box-sizing_border_box {
+  box-sizing: border-box;
+  border: 10px orange solid;
+  padding: 10px;
+  width: calc(33% - 60px);
+  height: 200px;
+  margin: 20px;
+  float: left;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* width & max-width  */
+
+/* display: inline, inline-block, block  */
+/* .a,
+.b,
+.c {
+  margin: 20px;
+}
+
+div.a span {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border: solid red;
+  padding: 2px;
+}
+div.b span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border: solid red;
+  padding: 2px;
+}
+div.c span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border: solid red;
+  padding: 2px;
+} */
+
+/* display vs. visibility */
+
+/* div.none,
+div.hidden {
+  border: solid green;
+  margin: 20px;
+}
+div.none ul li:nth-last-of-type(2) {
+  display: none;
+}
+
+div.hidden ul li:nth-last-of-type(2) {
+  visibility: hidden;
+} */
+
+/* overflow */
+/* 
+
+div.one,
+div.two,
+div.three,
+div.four {
+  width: calc(25% - 50px);
+  height: 150px;
+  border: solid red;
+  margin: 10px;
+  float: left; 
+  padding: 10px;
+} 
+/* overflow: visible; */
+
+/*
+.one {
+  overflow: visible;
+}
+.two {
+  overflow: scroll;
+}
+div.three {
+  height: 350px;
+  overflow: auto;
+}*
+/* overflow: auto; works like this when browser does need some space and creates a scroll bar */
+/*.four {
+  overflow: hidden;
+} 
+*/
+/* 
+text shadow & box shadow */
+
+p {
+  font-size: 1.5rem;
+  color: gray;
+  text-shadow: 2px 2px 5px blue;
+  margin-bottom: 20px;
+}
+.para1 {
+  color: yellow;
+  text-shadow: -1px 0 0 black, 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
+}
+
+section {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  margin: 10px;
+  box-shadow: 2px 2px 5px blue inset;
+}
+
+.article2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  margin: 10px;
+  box-shadow: 2px 2px 5px red;
+}
