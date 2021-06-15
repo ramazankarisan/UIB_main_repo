@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  /* margin: 20px 100px; */
+  padding: 20px;
+  border: 1px solid black;
+  position: static;
+}
+
+/* position: static by default *************/
+/* .one {
+  background: #c3ee40;
+}
+.two {
+  background: #64eaec;
+}
+.three {
+  background: orange;
+}
+
+.four {
+  background: #d079f5;
+} */
+
+/* position: relative ****************/
+
+/* .one {
+  background: #c3ee40;
+  position: relative;
+  right: -10vw;
+  top: 50vh;
+}
+.two {
+  background: #64eaec;
+}
+.three {
+  background: orange;
+  position: relative;
+  bottom: 100px;
+  left: 120px;
+}
+
+.four {
+  background: #d079f5;
+}
+span:nth-of-type(3) {
+  position: relative;
+  left: 250px;
+} */
+
+/* position: fixed *****/
+
+/* .one {
+  background: #c3ee40;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.two {
+  background: #64eaec;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.three {
+  background: orange;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.four {
+  background: #d079f5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+} */
+
+/* 
+position: absolute *************/
+
+/* article {
+  width: 150px;
+  height: 150px;
+  color: black;
+  background: white;
+  text-align: center;
+  line-height: 50px;
+  border: solid;
+}
+.span {
+  border: 1px solid red;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.one {
+  background: #c3ee40;
+}
+.two {
+  background: #64eaec;
+}
+.three {
+  background: orange;
+  width: 60%;
+  height: 50vh;
+  position: relative;
+}
+
+.four {
+  background: #d079f5;
+}
+
+.box2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.span {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* position: sticky ***********/
+/* 
+section {
+  width: 100%;
+  height: 250px;
+  background: #d5d5d5;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background: black;
+
+  position: sticky;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 50px;
+  color: white;
+}
+.one {
+  background: #c3ee40;
+  width: 100%;
+  height: 600px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.two {
+  background: #64eaec;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.three {
+  background: orange;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.four {
+  background: #d079f5;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 30px;
+} */
+
+/* z-index **************************/
+
+/* .z1,
+.z2,
+.z3 {
+  width: 200px;
+  height: 200px;
+  border: solid;
+  position: absolute;
+  text-align: end;
+}
+.z1 {
+  top: 50px;
+  left: 50px;
+  background: orange;
+  z-index: 3;
+}
+.z2 {
+  top: 100px;
+  left: 100px;
+  background: salmon;
+  z-index: 2;
+}
+.z3 {
+  top: 150px;
+  left: 150px;
+  background: greenyellow;
+  z-index: 1;
+} */
+
+/* 
+Banner example ********************/
+
+header {
+  width: 100%;
+  height: 50vh;
+  outline: 3px solid red;
+}
+img:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
