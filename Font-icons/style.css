@@ -1,0 +1,31 @@
+.fa-stack .fa-circle {
+  color: lightblue;
+}
+.fa-stack .fa-twitter {
+  color: dodgerblue;
+}
+.box {
+  background: lightblue;
+  display: inline-block;
+}
+
+.box::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "\f270";
+
+  color: red;
+  font-size: 2rem;
+  padding-right: 1rem;
+  vertical-align: middle;
+}
+.box::after {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "\f26d";
+
+  color: red;
+  font-size: 2rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+}
