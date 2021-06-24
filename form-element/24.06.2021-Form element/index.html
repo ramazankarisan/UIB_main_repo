@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Html Form Elements</title>
+  </head>
+  <body>
+    <h1>Form Elements</h1>
+    <!-- syntax of form element -->
+    <form action="" target="" method="" autocomplete="" novalidate="">
+      ... Form Elements here ...
+    </form>
+
+    <h2>Form Element: &lt;input&gt;</h2>
+    <h3>input type="text,password,reset, submit"</h3>
+    <form>
+      <label for="firstname">Firstname</label>
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="Your Firstname"
+        autofocus
+      />
+
+      <label for="lastname">Lastname</label>
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        placeholder="Your Lastname"
+      />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+
+      <input type="submit" value="Send" />
+
+      <input type="reset" value="Reset" />
+    </form>
+    <!-- readonly, disabled, placeholder, value, required, autofocus, autocomplete  -->
+
+    <h4>input type="radio"</h4>
+    <form>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+    </form>
+
+    <h4>type="checkbox"</h4>
+
+    <form>
+      <input type="checkbox" id="html" name="course" value="html" />
+      <label for="html">HTML</label>
+
+      <input type="checkbox" id="css" name="course" value="css" />
+      <label for="css">CSS</label>
+
+      <input type="checkbox" id="js" name="course" value="js" />
+      <label for="js">JavaScript</label>
+    </form>
+
+    <h4>type="color"</h4>
+
+    <form>
+      <label for="color">color </label>
+      <input type="color" name="" id="color" />
+    </form>
+    <h4>type="date"</h4>
+    <form>
+      <label for="birthdate">Birthdate</label>
+      <input
+        type="date"
+        name=""
+        id="birthdate"
+        min="2019-12-31"
+        max="2021-12-31"
+      />
+      <input type="submit" value="send" />
+    </form>
+    <h4>type="datetime-local"</h4>
+    <form>
+      <label for="birthdate">Birthdate</label>
+      <input type="datetime-local" name="" id="birthdate" />
+      <input type="submit" value="send" />
+    </form>
+
+    <h4>type="email"</h4>
+    <form>
+      <input type="email" name="" placeholder="your e-mail" />
+      <input type="submit" value="send" />
+    </form>
+
+    <h4>type="number"</h4>
+    <form>
+      <label for="quantity"> Quantity</label>
+      <input type="number" name="" id="quantity" min="1" max="15" />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 3rem;
+}
+
+/* input type="text,password,reset, submit" */
+form {
+  padding: 1rem;
+  margin: 1rem;
+  background: lightblue;
+  width: fit-content;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+input[type="submit"],
+input[type="reset"] {
+  background: darkorange;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+/* :focus Pseudo class */
+
+input[type="text"]:focus {
+  background: lightcoral;
+  outline: 0;
+  border: 0;
+}
+
+/* input type="radio" */
+
+input[type="radio"] {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+}
+input[type="radio"] + label {
+  display: inline;
+  margin-left: 3px;
+
+  vertical-align: middle;
+}
+/* type="checkbox" */
+
+input[type="checkbox"] {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+}
+input[type="checkbox"] + label {
+  display: inline;
+  margin-left: 3px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* ::placeholder pseudo class */
+input[type="email"]::placeholder {
+  color: red;
+  padding-left: 5px;
+}
