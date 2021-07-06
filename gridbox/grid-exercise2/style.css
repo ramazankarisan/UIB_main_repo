@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 4fr 3fr;
+  gap: 8px;
+  padding: 8px;
+  background: #d5d5d5;
+}
+.grid-container > div {
+  background: tomato;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+.header {
+  grid-area: 1/1/2/6;
+}
+.main-left {
+  grid-area: 2/2/5/3;
+}
+.section1 {
+  grid-area: 2/3/3/4;
+}
+.section2 {
+  grid-area: 3/3/4/4;
+}
+.section3 {
+  grid-area: 2/4/4/5;
+}
+.section4 {
+  grid-area: 4/3/5/5;
+}
+.footer {
+  grid-area: 5/1/6/6;
+}
